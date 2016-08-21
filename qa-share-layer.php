@@ -48,7 +48,7 @@
 			qa_html_theme_base::footer();
 			if(@$this->content['q_view']) {
 				if(qa_opt('share_plugin_twitter')) {
-					$this->output('<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>');
+					$this->output('<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>');
 				}
 				if(qa_opt('share_plugin_google')) {
 					$this->output('<script type="text/javascript">(function() {var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);})();</script>');
@@ -75,7 +75,7 @@
 			$code = array(
 				'facebook'=> '<iframe src="//www.facebook.com/plugins/like.php?href='.qa_path_html(qa_q_request($this->content['q_view']['raw']['postid'], $this->content['q_view']['raw']['title']), null, qa_opt('site_url')).'&amp;send=false&amp;layout=standard&amp;width=53&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=20&amp;appId=170382616390886" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:53px; height:20px;" allowTransparency="true"></iframe>',
 				
-				'twitter'=>'<a href="http://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>',
+				'twitter'=>'<a href="//twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>',
 				
 				'google'=>'<g:plusone size="medium" count="false"></g:plusone>',
 				
